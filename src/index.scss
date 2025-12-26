@@ -1,0 +1,42 @@
+/* ===== Global Reset ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* ===== Base Typography ===== */
+
+body {
+  font-family: "air-regular", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #101011;
+  color: #ffffff;
+}
+
+/* ===== Root Containers ===== */
+
+#root {
+  height: 100%;
+}
+
+/* ===== Code Blocks ===== */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+}

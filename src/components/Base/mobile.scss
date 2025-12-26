@@ -1,0 +1,111 @@
+#mobile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#mobile .base_container {
+  padding: 0;
+  height: auto;
+  flex-grow: unset;
+}
+
+#mobile .base_container nav {
+  display: none;
+}
+
+#mobile .base_container .footer {
+  display: none;
+}
+
+#mobile .base_container .hero {
+  justify-content: center;
+}
+
+#mobile .base_container .hero .intro_box {
+  flex-direction: column-reverse;
+  margin: 0;
+}
+
+#mobile .base_container .hero .intro_box h1 {
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+#mobile .base_container .hero .description {
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+#mobile .base_container .hero .intro_box h1 br {
+  display: none;
+}
+
+/* ===============================
+   🔥 MOBILE SOCIAL FOOTER (FIX)
+================================ */
+
+.mobile_container .social_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  width: 100%;
+  padding: 20px 0 10px;
+}
+
+.mobile_container .social_buttons a {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #ffffff; /* ← THIS WAS THE MISSING PIECE */
+  text-decoration: none;
+}
+
+/* ===== BUTTON STYLE ===== */
+
+.go_button_container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+
+.go_button_container a {
+  margin: 5px;
+  text-decoration: none;
+}
+
+.go_button_container button {
+  background-color: #16161a;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  font-size: var(--small-font);
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-family: 'air-regular';
+}
+
+.go_button_container button.explore {
+  font-size: 15px;
+}
+
+.go_button_container button:hover {
+  border: 1px solid #a6a6a7;
+}
+
+.go_button_container button:focus {
+  outline: none;
+}
+
+.go_button_container button b {
+  transform: rotate(180deg);
+  margin: 0;
+  font-weight: 100;
+  margin-right: 5px;
+}

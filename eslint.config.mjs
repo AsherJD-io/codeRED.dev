@@ -1,0 +1,64 @@
+import js from "@eslint/js";
+import react from "eslint-plugin-react";
+import reactHooks from "eslint-plugin-react-hooks";
+import tseslint from "@typescript-eslint/eslint-plugin";
+import tsParser from "@typescript-eslint/parser";
+import prettier from "eslint-plugin-prettier";
+
+export default [
+  js.configs.recommended,
+
+  {
+    files: ["**/*.ts", "**/*.tsx"],
+
+    languageOptions: {
+      parser: tsParser,
+      parserOptions: {
+        ecmaVersion: "latest",
+        sourceType: "module",
+        ecmaFeatures: {
+          jsx: true
+        }
+      },
+
+      // ✅ browser + DOM + timers
+      globals: {
+        window: "readonly",
+        document: "readonly",
+        HTMLElement: "readonly",
+        setTimeout: "readonly",
+        clearTimeout: "readonly"
+      }
+    },
+
+    plugins: {
+      react,
+      "react-hooks": reactHooks,
+      "@typescript-eslint": tseslint,
+      prettier
+    },
+
+    rules: {
+      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+
+      "react/react-in-jsx-scope": "off",
+
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+
+      "prettier/prettier": [
+        "error",
+        { "endOfLine": "auto" }
+      ]
+    },
+
+    settings: {
+      react: {
+        version: "detect"
+      }
+    }
+  }
+];
