@@ -39,7 +39,7 @@ const projects: ProjectType[] = [
     description: "A desktop monitoring tool",
     github: "https://github.com/AsherJD-io/Tabs-activity_tracker",
     live: "",
-    stack: "Python",
+    stack: "Python + Google Cloud Console + Matplotlib",
     isPrivate: false,
     isLive: false,
   },
