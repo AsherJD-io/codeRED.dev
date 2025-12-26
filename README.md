@@ -1,8 +1,8 @@
 # codered portfolio
 
-This is a [React+TypeScript+SCSS] project bootstrapped with [`create vite@latest`], website live on <https://codered.dev>.
+This is a [React+TypeScript+SCSS] project bootstrapped with [`create vite@latest`]
 
-If you want to clone this project, run `git clone https://github.com/AsherJD-io/codeRED.dev`
+If you want to clone this project, run `git clone https://github.com/AsherJD-io/codeRED`
 
 ## Getting Started
 
@@ -41,3 +41,6 @@ If you are developing a production application, we recommend updating the config
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ### Deploy on Vercel
+
+Push build files to Github repo
+Simulate deployment on <https://vercel.app> to effect any changes before full deployment.

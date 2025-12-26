@@ -25,10 +25,10 @@ type ProjectsProps = {
 const projects: ProjectType[] = [
   {
     id: uuid(),
-    title: "codeRED.dev",
+    title: "codeRED",
     description: "My Portfolio Website",
-    github: "https://github.com/AsherJD-io/codered.dev",
-    live: "https://codered.dev",
+    github: "https://github.com/AsherJD-io/codered",
+    live: "https://codered.vercel.app",
     stack: "React + TypeScript + Vercel",
     isPrivate: false,
     isLive: true,
