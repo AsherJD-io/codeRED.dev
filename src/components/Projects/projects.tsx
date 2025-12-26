@@ -28,9 +28,9 @@ const projects: ProjectType[] = [
     title: "codeRED",
     description: "My Portfolio Website",
     github: "https://github.com/AsherJD-io/codered",
-    live: "https://codered.vercel.app",
-    stack: "React + TypeScript + Vercel",
-    isPrivate: false,
+    live: "https://codered-azure.vercel.app",
+    stack: "React + TypeScript + Vite + SCSS ",
+    isPrivate: true,
     isLive: true,
   },
   {
