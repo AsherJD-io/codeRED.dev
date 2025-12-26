@@ -1,6 +1,6 @@
 # codered portfolio
 
-This is a [React+TypeScript] project bootstrapped with [`create vite@latest`], website live on <https://codered.dev>.
+This is a [React+TypeScript+SCSS] project bootstrapped with [`create vite@latest`], website live on <https://codered.dev>.
 
 If you want to clone this project, run `git clone https://github.com/AsherJD-io/codeRED.dev`
 
